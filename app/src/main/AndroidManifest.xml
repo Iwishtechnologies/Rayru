@@ -16,10 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RentalPackageSelectActivity"></activity>
+        <activity android:name=".activity.PaymentOptionActivity"></activity>
+        <activity android:name=".activity.BillActivity" />
+        <activity android:name=".activity.RentalPackageSelectActivity" />
         <activity android:name=".activity.DriverInfoActivity" />
         <activity android:name=".activity.SignupActivity" />
-        <activity android:name=".activity.SplashActivity" >
+        <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,18 +30,20 @@
         </activity>
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.NoInterNetActivity" />
-        <activity android:name=".activity.CheckMapActivity"/>
+        <activity android:name=".activity.CheckMapActivity" />
         <activity android:name=".activity.MainActivity">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyApe8T3JMiqj9OgEbqd--zTBfl3fibPeEs" />
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_zvQhBxwwcpaCDA" />
     </application>
 
 </manifest>

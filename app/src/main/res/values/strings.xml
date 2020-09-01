@@ -29,6 +29,15 @@
     <string name="booking_fee">Booking Fee</string>
     <string name="Total_fare">Booking Fee</string>
     <string name="note">Note : This is total fare for your ride. It might change if you change your drop or route.</string>
+    <string name="bill">Your Bill</string>
+    <string name="confirm">Confirm</string>
+    <string name="book_now">Book now</string>
+    <string name="rs_symbol">\u20B9</string>
+    <string name="rating">How was yours ride experience ?</string>
+    <string name="payment_option">PAYMENT OPTION</string>
+    <string name="cash">cash</string>
+    <string name="rayru_money">Rayru Money Wallet</string>
+    <string name="wallet_amount">Wallet Amount</string>
 </resources>
 
 

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightColor"
+    android:orientation="vertical"
+    tools:context=".activity.PaymentOptionActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/payment_option"
+            android:textColor="@color/blackcolor"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rayru_wallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/payment_design"
+        android:elevation="10dp"
+        android:onClick="clickerCheckMethod"
+        android:orientation="vertical"
+        android:outlineAmbientShadowColor="@color/blackcolor"
+        android:outlineSpotShadowColor="@color/blackcolor"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:tag="wallet">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/taxi_logo1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:padding="4dp"
+            android:text="@string/rayru_money"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rayruWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:buttonTint="@color/colorAccent"
+            android:layoutDirection="rtl" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--        <tech.iwish.taxi.extended.TextViewFont-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/wallet"-->
+        <!--            android:textColor="@color/blackColor"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:padding="10dp"-->
+        <!--            app:fonttype="font10" />-->
+
+        <LinearLayout
+            android:id="@+id/paymentAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/wallet_amount"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="250"
+                android:textColor="@color/blackcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:weightSum="2">-->
+
+        <!--            <tech.iwish.taxi.extended.TextViewFont-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:padding="10dp"-->
+        <!--                android:text="@string/payment_available"-->
+        <!--                android:textColor="@color/orangeColor"-->
+        <!--                android:textSize="16sp" />-->
+
+        <!--            <tech.iwish.taxi.extended.TextViewFont-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="right"-->
+        <!--                android:padding="10dp"-->
+        <!--                android:text="250"-->
+        <!--                android:textColor="@color/blackColor"-->
+        <!--                android:textSize="16sp" />-->
+        <!--        </LinearLayout>-->
+
+        <!--        <LinearLayout-->
+
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:weightSum="2"-->
+        <!--            android:background="@drawable/payment_design">-->
+
+        <!--            <tech.iwish.taxi.extended.TextViewFont-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:padding="10dp"-->
+        <!--                android:text="Pay Amount"-->
+        <!--                android:textColor="@color/orangeColor"-->
+        <!--                android:textSize="16sp" />-->
+
+        <!--            <tech.iwish.taxi.extended.TextViewFont-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:gravity="right"-->
+        <!--                android:padding="10dp"-->
+        <!--                android:text="250"-->
+        <!--                android:textColor="@color/blackColor"-->
+        <!--                android:textSize="16sp" />-->
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/online_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment_design"
+        android:elevation="10dp"
+        android:onClick="clickerCheckMethod"
+        android:orientation="vertical"
+        android:padding="10dp"
+
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:tag="onlpayment">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/online_payment_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:padding="4dp"
+            android:text="Online Payment"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/onlinePayments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:buttonTint="@color/colorAccent"
+            android:layoutDirection="rtl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/payment_design"
+        android:elevation="10dp"
+        android:onClick="clickerCheckMethod"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:tag="cashsss">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Cash"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp"
+            />
+
+        <RadioButton
+            android:id="@+id/caseRadios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:buttonTint="@color/colorAccent"
+            android:layoutDirection="rtl" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="Add money to Rayru Wallet"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/wallet_button"
+            android:padding="4dp"
+            android:text="Confirm"
+            android:textColor="@color/whitecolor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

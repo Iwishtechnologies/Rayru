@@ -18,6 +18,8 @@ import static com.iwish.rayru.config.Constants.RIDE_START;
 import static com.iwish.rayru.config.Constants.USER_CONTACT;
 import static com.iwish.rayru.config.Constants.USER_EMAIL;
 import static com.iwish.rayru.config.Constants.USER_NAME;
+import static com.iwish.rayru.config.Constants.WALLET_AMOUNT;
+
 
 public class Session {
 
@@ -91,6 +93,10 @@ public class Session {
         editor.remove(RIDE_START).commit();
     }
 
+//  wallet
+    public void walletAdd(String data) {
+        editor.putString(WALLET_AMOUNT, data).commit();
+    }
 
 }
 

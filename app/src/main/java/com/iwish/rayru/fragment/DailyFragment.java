@@ -62,6 +62,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.iwish.rayru.R;
+import com.iwish.rayru.activity.BillActivity;
 import com.iwish.rayru.activity.DriverInfoActivity;
 
 import com.iwish.rayru.adapter.VehicleAdapter;
@@ -147,7 +148,7 @@ public class DailyFragment extends Fragment implements OnMapReadyCallback
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_daily, container ,false);
+        view = inflater.inflate(R.layout.fragment_daily, container, false);
 
         InitializeActivity();
         ActivityAction();
@@ -191,6 +192,7 @@ public class DailyFragment extends Fragment implements OnMapReadyCallback
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
 
+                startActivity(new Intent(getActivity(), BillActivity.class));
 
                 endTrip.removeValue();
                 googleMaps.clear();

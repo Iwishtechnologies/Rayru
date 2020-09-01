@@ -17,7 +17,7 @@ public class Constants {
     public static String PACKAGEVEHICLE= URL+"user/packagevehicle";
     public static String USER_OTP= URL+"user/otp";
     public static String OUTSTATIONVEHICLE= URL+"user/outstationvehicle";
-
+    public static String WALEET_MONEY_GET= URL+"user/moneyget";
 
 //    Session
 
@@ -34,6 +34,7 @@ public class Constants {
     public static final String DRIVER_ID = "driver_id";
     public static final String DRIVER_NAVIGATION = "deiver_navigation";
     public static final String RIDE_START = "ride_start";
+    public static final String WALLET_AMOUNT = "walletamount";
 
 }
 
