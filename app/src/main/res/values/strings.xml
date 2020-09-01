@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Rayru</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drop_location_hint">Enter drop location</string>
+    <string name="home">Home</string>
+    <string name="ride_history">Ride History</string>
+    <string name="rate_card">Rate Card</string>
+    <string name="refer_earn">Refer Earn</string>
+    <string name="wallet">Wallet</string>
+    <string name="support">Support</string>
+    <string name="logout">LogOut</string>
+    <string name="login">Login</string>
+    <string name="registered">Enter Your registered mobile number</string>
+    <string name="outstation_button">Continue</string>
+    <string name="continu">Continue</string>
+    <string name="ride_now">Ride Now</string>
+    <string name="login_here">Login Here</string>
+    <string name="login_activity">Already Registered?</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN Up</string>
+    <string name="rideDetails">RIDE DETAILS</string>
+    <string name="tripDistance">Trip Distane</string>
+    <string name="tripduration">Trip Duration</string>
+    <string name="billDetails">BILL DETAILS</string>
+    <string name="rideFare">Ride Fare</string>
+    <string name="specialDiscount">Special Discount</string>
+    <string name="total_access_fee">Total Access Fee</string>
+    <string name="booking_fee">Booking Fee</string>
+    <string name="Total_fare">Booking Fee</string>
+    <string name="note">Note : This is total fare for your ride. It might change if you change your drop or route.</string>
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

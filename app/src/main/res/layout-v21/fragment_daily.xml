@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.DailyFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/dailyMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/pickupEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="#fff"
+            android:ellipsize="end"
+            android:inputType="text"
+            android:maxLines="1"
+            android:onClick="setclick"
+            android:padding="10dp"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:singleLine="true"
+            android:tag="pickLocations" />
+
+        <TextView
+            android:id="@+id/pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/dropTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickupEditText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:background="#fff"
+            android:elevation="10dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:shadowDx="10"
+            android:shadowDy="5"
+            android:singleLine="true"
+            android:tag="dropLocations"
+            android:text="@string/drop_location_hint"
+
+            />
+
+        <TextView
+            android:id="@+id/drop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickupEditText"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="20dp"
+            android:padding="10dp"
+            android:paddingLeft="15dp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/red_pin_icon" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dialogLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_vehile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/vehicleCategoryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/RideNowBtn" />
+
+        <Button
+
+            android:id="@+id/RideNowBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicleRecyclerView"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blackcolor"
+            android:text="@string/ride_now"
+            android:textColor="@color/whitecolor" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

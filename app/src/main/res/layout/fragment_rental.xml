@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.RentalFragment">
+
+
+
+    <RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/rentalMap"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/red_pin_icon" />
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/dialogLoad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="1dp"/>
+
+
+    <TextView
+        android:id="@+id/pickupEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="#fff"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:maxLines="1"
+        android:onClick="setclick"
+        android:padding="10dp"
+        android:shadowDx="10"
+        android:shadowDy="5"
+        android:singleLine="true"
+        android:tag="pickLocations" />
+
+    <Button
+        android:id="@+id/RentalContious"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Contious"
+        android:textColor="@color/whitecolor"
+        android:background="@color/blackcolor"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

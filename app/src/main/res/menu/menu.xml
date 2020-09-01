@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/ride_history"
+            android:title="@string/ride_history"/>
+        <item
+            android:id="@+id/rate_card"
+            android:title="@string/rate_card"/>
+        <item
+            android:id="@+id/refer_earn"
+            android:title="@string/refer_earn"/>
+        <item
+            android:id="@+id/wallet"
+            android:title="@string/wallet"/>
+        <item
+            android:id="@+id/support"
+            android:title="@string/support"/>
+
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout"/>
+
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    android:paddingStart="50dp"
+    android:paddingTop="50dp"
+    android:paddingEnd="50dp"
+    tools:context=".activity.SignupActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/taxi_logo" />
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_edit_design"
+        android:drawableLeft="@drawable/user_icon_login"
+        android:drawablePadding="15dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/whitecolor"
+        android:textColorHint="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_design"
+        android:drawableLeft="@drawable/email_login_icon"
+        android:drawablePadding="15dp"
+        android:hint="Email Id"
+        android:inputType="text"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/whitecolor"
+        android:textColorHint="@color/whitecolor" />
+
+    <EditText
+        android:id="@+id/signup_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_design"
+        android:drawableLeft="@drawable/user_icon_login"
+        android:drawablePadding="15dp"
+        android:hint="Contact"
+        android:inputType="number"
+        android:maxLength="10"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/whitecolor"
+        android:textColorHint="@color/whitecolor" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_design"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edit_design"
+        android:drawableLeft="@drawable/password_icon"
+        android:drawablePadding="15dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingTop="3dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="3dp"
+        android:textColor="@color/whitecolor"
+        android:textColorHint="@color/whitecolor"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_edit_button_design"
+        android:text="@string/sign_up" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="@string/login_activity"
+            android:textColor="@color/whitecolor"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/login_activity_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:text="@string/login_here"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refer_code_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Have a"
+            android:textColor="@color/whitecolor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" referral code?"
+            android:textColor="#2496F9"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Code Applied"
+        android:textColor="@color/whitecolor"
+        android:textSize="12sp" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

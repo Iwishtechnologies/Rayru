@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "321827253912",
+    "firebase_url": "https://rayru-907f7.firebaseio.com",
+    "project_id": "rayru-907f7",
+    "storage_bucket": "rayru-907f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321827253912:android:f2a0839577e915606f6aed",
+        "android_client_info": {
+          "package_name": "com.iwish.rayru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321827253912-vo3t05v6j1i16b4au6j9h0v9ta9di12o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkAUOYzVy248KSX9AXaV5DYpq2cGatPyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321827253912-vo3t05v6j1i16b4au6j9h0v9ta9di12o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321827253912:android:0ac17ea092fc72ca6f6aed",
+        "android_client_info": {
+          "package_name": "com.iwish.taxidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "321827253912-bgabh8ap5fakufsvj4r05840fo2tir9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iwish.taxidriver",
+            "certificate_hash": "5d642a101c9d8da2657e660396322dc6f9effd41"
+          }
+        },
+        {
+          "client_id": "321827253912-vo3t05v6j1i16b4au6j9h0v9ta9di12o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkAUOYzVy248KSX9AXaV5DYpq2cGatPyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "321827253912-vo3t05v6j1i16b4au6j9h0v9ta9di12o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

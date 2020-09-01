@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fragment.Login_Fragment_2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Auto Verifying OTP send to"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mobNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="8871121959"
+            android:textColor="@color/blackcolor"
+            android:textSize="16sp" />
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cursorVisible="false"
+            app:forceKeyboard="false"
+            app:hint="0"
+            app:inputType="number"
+            app:password="false"
+            app:pinHeight="50dp"
+            app:pinLength="4"
+            app:pinWidth="50dp"
+            app:textSize="8sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/login_button_design"
+        android:padding="8dp"
+        android:text="@string/continu" />
+
+
+</LinearLayout>
