@@ -75,7 +75,7 @@ public class LoginFragment_1 extends Fragment {
 
     private void mobileverify() {
 
-
+        String a = mobile_number.getText().toString().trim();
         mainLayout.setAlpha((float) 0.5);
         setProgressDialog("Number Verify");
 
@@ -83,7 +83,7 @@ public class LoginFragment_1 extends Fragment {
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("mobile_number", mobile_number.getText().toString().trim());
+            jsonObject.put("mobile_number", a);
         } catch (JSONException e) {
             e.printStackTrace();
         }

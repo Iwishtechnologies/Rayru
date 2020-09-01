@@ -148,7 +148,7 @@ public class DailyFragment extends Fragment implements OnMapReadyCallback
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_daily, container, false);
+        view = inflater.inflate(R.layout.fragment_daily, null);
 
         InitializeActivity();
         ActivityAction();

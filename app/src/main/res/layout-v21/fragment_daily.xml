@@ -28,12 +28,12 @@
             android:ellipsize="end"
             android:inputType="text"
             android:maxLines="1"
-            android:onClick="setclick"
             android:padding="10dp"
             android:shadowDx="10"
             android:shadowDy="5"
             android:singleLine="true"
-            android:tag="pickLocations" />
+            android:tag="pickLocations"
+            tools:ignore="TextViewEdits" />
 
         <TextView
             android:id="@+id/pic"
@@ -57,14 +57,14 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:padding="10dp"
-            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
             android:shadowDx="10"
             android:shadowDy="5"
             android:singleLine="true"
             android:tag="dropLocations"
             android:text="@string/drop_location_hint"
 
-            />
+            tools:ignore="RtlSymmetry" />
 
         <TextView
             android:id="@+id/drop"
@@ -75,14 +75,16 @@
             android:layout_marginTop="4dp"
             android:layout_marginEnd="20dp"
             android:padding="10dp"
-            android:paddingLeft="15dp" />
+            android:paddingStart="15dp"
+            tools:ignore="RtlSymmetry" />
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:src="@drawable/red_pin_icon" />
+            android:src="@drawable/red_pin_icon"
+            android:contentDescription="@string/todo" />
 
     </RelativeLayout>
 
@@ -114,7 +116,8 @@
             android:layout_alignParentBottom="true"
             android:background="@color/blackcolor"
             android:text="@string/ride_now"
-            android:textColor="@color/whitecolor" />
+            android:textColor="@color/whitecolor"
+            tools:ignore="UnknownIdInLayout" />
 
 
     </RelativeLayout>

@@ -28,7 +28,6 @@
             android:ellipsize="end"
             android:inputType="text"
             android:maxLines="1"
-            android:onClick="setclick"
             android:padding="10dp"
             android:shadowDx="10"
             android:shadowDy="5"

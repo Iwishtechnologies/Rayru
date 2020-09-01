@@ -7,7 +7,7 @@ android {
 
     defaultConfig {
         applicationId "com.iwish.rayru"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -63,7 +63,7 @@ dependencies {
 //    https://github.com/florent37/SingleDateAndTimePicker
     implementation 'com.github.florent37:singledateandtimepicker:2.2.6'
 
-    implementation 'com.razorpay:checkout:1.5.13'
+    implementation 'com.razorpay:checkout:1.5.16'
 
 
 //  firebase
